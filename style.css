@@ -1,0 +1,223 @@
+/*
+Theme Name: CustomTheme
+Theme URI: https://wordpress.org/themes/CustomTheme/
+Author: the Rost team
+Author URI: http://rost.com.ua/
+Description: CustomTheme brings your site to life with immersive featured images and subtle animations. Our default theme works great in many languages, for any abilities, and on any device.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: CustomTheme
+Tags: custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("./assets/fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+header {
+  padding: 30px 0;
+}
+
+.genplan, .build-item {
+  min-height: calc(100vh - 200px);
+  display: flex;
+}
+.genplan .genplan-info, .genplan .building-info, .build-item .genplan-info, .build-item .building-info {
+  width: 100%;
+  margin: 60px 0 60px 30px;
+}
+
+.build {
+  fill: #bdbdbd;
+  stroke: #000;
+  cursor: pointer;
+  fill-opacity: 0.3;
+  stroke-opacity: 0.5;
+  stroke-width: 3px;
+  transition: 0.3s;
+}
+.build:hover {
+  fill-opacity: 0.8;
+  stroke-opacity: 1;
+}
+.build:active {
+  fill: blue;
+}
+
+.build-1 {
+  fill: #A32626;
+  stroke: #C92626;
+}
+
+.build-2 {
+  fill: #56BE25;
+  stroke: #5AC926;
+}
+
+.build-3 {
+  fill: #316ECA;
+  stroke: #2667C9;
+}
+
+.build-info, .genplan-info, .building-info {
+  width: 650px;
+  margin: 60px 30px 60px 30px;
+  border-radius: 25px;
+  padding: 60px;
+}
+.build-info-title {
+  margin-bottom: 24px;
+  text-align: center;
+  font-weight: 600;
+}
+.build-info h4, .genplan-info h4, .building-info h4 {
+  display: flex;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  padding: 18px 12px;
+}
+.build-info h4 span, .genplan-info h4 span, .building-info h4 span {
+  display: inline-block;
+  margin-left: 24px;
+  font-weight: 900;
+  color: #C92626;
+}
+.build-info-description {
+  margin-top: 24px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  padding: 18px 12px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+.build-item .floor-info-description {
+  margin-top: 24px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  padding: 18px 12px;
+}
+
+.floor {
+  stroke: rgba(51, 255, 0, 0);
+  fill: rgba(0, 0, 0, 0);
+}
+.floor:hover {
+  fill: rgba(51, 255, 0, 0.363);
+  stroke: rgba(51, 255, 0, 0.842);
+}
+
+h3 {
+  margin-bottom: 24px;
+}
+
+.flats-info-item {
+  display: flex;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  padding: 18px 12px;
+}
+.flats-info-item span {
+  display: inline-block;
+  margin-left: 24px;
+  font-weight: 900;
+  color: #C92626;
+}
+
+.flat .status-bg {
+  fill: #b278d4;
+}
+.flat.action .status-bg {
+  fill: #80d34e;
+}
+.flat.sold .status-bg {
+  fill: #d34e4e;
+}
+.flat.booking .status-bg {
+  fill: #6b68ff;
+}
+.flat.active .plan {
+  fill: rgba(74, 138, 72, 0.6039215686);
+  stroke: rgb(103, 214, 103);
+  stroke-width: 5px;
+}
+
+.plan {
+  fill: rgba(127, 255, 212, 0.123);
+  stroke: rgba(0, 255, 255, 0);
+  cursor: pointer;
+}
+.plan:hover {
+  fill: rgba(26, 202, 26, 0.274);
+  stroke: rgb(103, 214, 103);
+  stroke-width: 4px;
+}
+
+.flat-info {
+  display: flex;
+  padding: 36px 24px;
+}
+
+.floor-plan {
+  max-width: 1440px;
+  margin: 60px auto 60px 0;
+}
+
+.flat-item {
+  padding: 20px;
+  border: 1px solid;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1;
+  display: grid;
+}
+.flat-item b {
+  font-size: 24px;
+  margin-top: auto;
+  padding-top: 18px;
+  color: blue;
+}
+
+footer {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*# sourceMappingURL=style.css.map */
